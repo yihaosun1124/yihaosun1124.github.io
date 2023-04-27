@@ -2,96 +2,55 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Yihao Sun
     - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: 24th Novenver 1999
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.Sc.
+      institution: Nanjing University, Nanjing, China
+      year: 2021-2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - LAMDA Group, School of Artificial Intelligence
+        - 'Supervisor: Prof. Yang Yu'
+  
+    - title: B.Sc.
+      institution: Sichuan University, Chengdu, China
+      year: 2017-2021
       description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - Software Enginering in School of Software
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Reinforcement Learning
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - Offline Reinforcement Learning
+        - Model-based Reinforcement Learning
 
-- title: Other Interests
-  type: list
+- title: Publications
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Model-Bellman inconsistency for model-based offline reinforcement learning
+      authors: Yihao Sun*, Jiaji Zhang*, Chengxing Jia, Haoxin Lin, Junyin Ye, Yang Yu
+      abbr: ICML'23 
+      year: 2023
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/yihaosun1124/OfflineRL-Kit">OfflineRL-Kit</a>
+      year: 2023
+      description: An elegant PyTorch offline reinforcement learning library.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - The second prize scholarship of Nanjing University
+    - year: 2021
+      items: 
+        - The first prize scholarship of Nanjing University

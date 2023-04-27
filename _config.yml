@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Yihao Sun # the website title (if blank, full name will be used instead)
 first_name: Yihao
-middle_name: 
+middle_name:
 last_name: Sun
 email: sunyh@lamda.nju.edu.cn
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -71,37 +71,37 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
-gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
-mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
-telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
-whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-osf_id: # your OSF ID
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-wikipedia_id: # your wikipedia id (Case sensitive)
-dblp_url: # your DBLP profile url
-stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
-lastfm_id: # your lastfm id
-spotify_id: # your spotify id
-pinterest_id: # your pinterest id
-unsplash_id: # your unsplash id
-instagram_id: # your instagram id
-facebook_id: # your facebook id
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: # your discord id (18-digit unique numerical identifier)
+github_username: yihaosun1124
+# gitlab_username: # your GitLab user name
+# twitter_username: # your Twitter handle
+# mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+# linkedin_username: # your LinkedIn user name
+# telegram_username: # your Telegram user name
+# scholar_userid: # your Google Scholar ID
+# semanticscholar_id: # your Semantic Scholar ID
+# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
+# orcid_id: # your ORCID ID
+# medium_username: # your Medium username
+# quora_username: # your Quora username
+# publons_id: # your ID on Publons
+# osf_id: # your OSF ID
+# research_gate_profile: # your profile on ResearchGate
+# blogger_url: # your blogger URL
+# work_url: # work page URL
+# keybase_username: # your keybase user name
+# wikidata_id: # your wikidata id
+# wikipedia_id: # your wikipedia id (Case sensitive)
+# dblp_url: # your DBLP profile url
+# stackoverflow_id: # your stackoverflow id
+# kaggle_id: # your kaggle id
+# lastfm_id: # your lastfm id
+# spotify_id: # your spotify id
+# pinterest_id: # your pinterest id
+# unsplash_id: # your unsplash id
+# instagram_id: # your instagram id
+# facebook_id: # your facebook id
+# youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
+# discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -120,9 +120,9 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name: My Blog # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_description: some thoughts and notes in my research
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -156,9 +156,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+#external_sources:
+# - name: medium.com
+#   rss_url: https://medium.com/@al-folio/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -268,8 +268,8 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Sun]
+  first_name: [Yihao]
 
   style: apa
   locale: en

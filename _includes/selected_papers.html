@@ -1,4 +1,9 @@
-
-          <div class="publications">
-            {% bibliography -f papers -q @*[selected=true]* %}
-          </div>
+<div class="publications">
+    <h4>Selected publications</h4>
+  * indicates equal contribution 
+  <br>
+  
+    {% bibliography -f conferences -q @*[selected=true]* %}
+    {% bibliography -f preprints -q @*[selected=true]* %}
+  </div>
+  
