@@ -23,6 +23,7 @@ Email: sunyh@lamda.nju.edu.cn <br/>
 
 [ [Github](https://github.com/yihaosun1124) ] [ [Zhihu](https://www.zhihu.com/people/hao-yue-dang-kong-55-6) ]
 
+#### Biography
 Currently I am a second year graduate student of <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
 <a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a> and a member of 
 <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx" target="_blank">LAMDA</a> Group, led by Professor <a href="http://cs.nju.edu.cn/zhouzh/" target="_blank">Zhi-Hua Zhou.</a>
@@ -31,7 +32,8 @@ I received my B.Sc. degree in Software Enginering in <a href="https://sw.scu.edu
 In September 2021, I was admitted to study for M.Sc. degree in Nanjing University under the supervision of 
 Prof. <a href="http://www.lamda.nju.edu.cn/yuy/" target="_blank">Yang Yu</a> without entrance examination, respectively.
 
-**Research Interests:** My research interest is Reinforcement Learning (RL). Currently, I focus on offline reinforcement learning and model-based reinforcement learning.
+#### Research Interests
+My research interest is Reinforcement Learning (RL). Currently, I focus on offline reinforcement learning (Offline RL) and model-based reinforcement learning (MBRL).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

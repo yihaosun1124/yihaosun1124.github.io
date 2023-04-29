@@ -4,7 +4,7 @@
     - name: Full Name
       value: Yihao Sun
     - name: Date of Birth
-      value: 24th November 1999
+      value: November 24th 1999
 
 - title: Education
   type: time_table
@@ -50,7 +50,7 @@
   contents:
     - year: 2022
       items: 
-        - The second prize scholarship of Nanjing University
+        - The Second Class Academic Scholarship in Nanjing University.
     - year: 2021
       items: 
-        - The first prize scholarship of Nanjing University
+        - The First Class Academic Scholarship in Nanjing University.
