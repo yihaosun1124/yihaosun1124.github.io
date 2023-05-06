@@ -14,11 +14,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-M.Sc. Student, <a href="http://lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA Group</a><br>
-  <a href="https://www.nju.edu.cn/EN/7f/6b/c7136a163691/page.htm">Department of Computer Science and Technology</a> <br />
+M.Sc. Student, <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA Group</a><br>
+  <a href="https://cs.nju.edu.cn/main.htm">Department of Computer Science and Technology</a> <br />
   <a href="http://keysoftlab.nju.edu.cn/">National Key Laboratory for Novel Software Technology</a> 
   <a href="http://www.nju.edu.cn/">Nanjing University</a><br />
-Supervisor: Prof. <a href="http://lamda.nju.edu.cn/yuy/">Yang Yu</a> <br/>
+Supervisor: Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK">Yang Yu</a> <br/>
 Email: sunyh@lamda.nju.edu.cn <br/>
 
 [ [Github](https://github.com/yihaosun1124) ] [ [Zhihu](https://www.zhihu.com/people/hao-yue-dang-kong-55-6) ]
@@ -30,7 +30,7 @@ Currently I am a second year graduate student of <a href="http://ai.nju.edu.cn/"
 
 I received my B.Sc. degree in Software Enginering in <a href="https://sw.scu.edu.cn/" target="_blank">School of software</a> in June 2021 from <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>.
 In September 2021, I was admitted to study for M.Sc. degree in Nanjing University under the supervision of 
-Prof. <a href="http://www.lamda.nju.edu.cn/yuy/" target="_blank">Yang Yu</a> without entrance examination, respectively.
+Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK" target="_blank">Yang Yu</a> without entrance examination, respectively.
 
 #### Research Interests
 My research interest is Reinforcement Learning (RL). Currently, I focus on offline reinforcement learning (Offline RL) and model-based reinforcement learning (MBRL).
