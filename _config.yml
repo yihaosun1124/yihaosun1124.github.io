@@ -55,7 +55,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -268,7 +268,7 @@ display_tags: ['RL', 'ML', 'math', 'code'] # this tags will be dispalyed on the 
 
 scholar:
 
-  last_name: [Sun]
+  last_name: [Sun, Sun*]
   first_name: [Yihao]
 
   style: apa
@@ -333,7 +333,7 @@ imagemagick:
     - ".png"
     - ".tiff"
   output_formats:
-    webp: "-resize 800x"
+    webp: "-resize 480x"
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
