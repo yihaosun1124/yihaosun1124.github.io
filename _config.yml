@@ -327,13 +327,16 @@ imagemagick:
     - 1400
   input_directories:
     - assets/img/
+    - assets/img/projects/
   input_formats:
     - ".jpg"
     - ".jpeg"
     - ".png"
     - ".tiff"
   output_formats:
-    webp: "-resize 480x"
+    jpg: "-quality 80% -define jpeg:dct-method=float -strip -interlace Plane"
+    webp: "-quality 80%"
+    # webp: "-resize 480x"
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
