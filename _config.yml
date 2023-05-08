@@ -336,7 +336,6 @@ imagemagick:
   output_formats:
     jpg: "-quality 80% -define jpeg:dct-method=float -strip -interlace Plane"
     webp: "-quality 80%"
-    # webp: "-resize 480x"
 
 # -----------------------------------------------------------------------------
 # Jekyll Diagrams
