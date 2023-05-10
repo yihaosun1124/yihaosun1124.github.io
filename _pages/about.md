@@ -33,7 +33,7 @@ In September 2021, I was admitted to study for M.Sc. degree in Nanjing Universit
 Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK" target="_blank">Yang Yu</a> without entrance examination, respectively.
 
 #### Research Interests
-My research interest is Reinforcement Learning (RL). Currently, I focus on offline reinforcement learning (Offline RL) and model-based reinforcement learning (MBRL).
+My research interest is reinforcement learning (RL). Currently, I focus on offline reinforcement learning (Offline RL) and model-based reinforcement learning (MBRL).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
