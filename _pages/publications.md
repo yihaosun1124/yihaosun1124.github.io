@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: 
-years: [2023, 2022]
+years: [2023]
 nav: true
 ---
 \* indicates equal contributioncon.
