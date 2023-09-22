@@ -24,7 +24,7 @@ Email: sunyh@lamda.nju.edu.cn <br/>
 [ [Github](https://github.com/yihaosun1124) ] [ [Zhihu](https://www.zhihu.com/people/hao-yue-dang-kong-55-6) ]
 
 #### Biography
-Currently I am a second year graduate student of <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
+Currently I am a third year graduate student of <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
 <a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a> and a member of 
 <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx" target="_blank">LAMDA</a> Group, led by Professor <a href="http://cs.nju.edu.cn/zhouzh/" target="_blank">Zhi-Hua Zhou.</a>
 
