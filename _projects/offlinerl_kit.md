@@ -35,3 +35,4 @@ OfflineRL-Kit is an offline reinforcement learning library based on pure PyTorch
     - [Model-based Offline Policy Optimization (MOPO)](https://arxiv.org/abs/2005.13239)
     - [Conservative Offline Model-Based Policy Optimization (COMBO)](https://arxiv.org/abs/2102.08363)
     - [Robust Adversarial Model-Based Offline Reinforcement Learning (RAMBO)](https://arxiv.org/abs/2204.12581)
+    - [Model-Bellman Inconsistency Penalized Offline Policy Optimization (MOBILE)](https://proceedings.mlr.press/v202/sun23q.html)
