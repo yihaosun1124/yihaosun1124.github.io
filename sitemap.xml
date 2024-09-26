@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://yihaosun1124.github.io/news/mobile_icml_23/</loc>
-<lastmod>2023-04-25T06:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yihaosun1124.github.io/news/offlinerl_kit_100stars/</loc>
-<lastmod>2023-05-18T14:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yihaosun1124.github.io/news/mppve_ecai_23/</loc>
-<lastmod>2023-07-16T06:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yihaosun1124.github.io/news/xiaomi_scholorship/</loc>
-<lastmod>2023-09-22T16:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://yihaosun1124.github.io/news/diaster_aaai_24/</loc>
 <lastmod>2023-12-09T14:00:00+00:00</lastmod>
 </url>
@@ -29,6 +13,10 @@
 <lastmod>2024-05-03T09:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>https://yihaosun1124.github.io/news/optail_neurips/</loc>
+<lastmod>2024-09-26T10:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://yihaosun1124.github.io/blog/2022/value-gap/</loc>
 <lastmod>2022-10-17T16:40:16+00:00</lastmod>
 </url>
@@ -38,7 +26,7 @@
 </url>
 <url>
 <loc>https://yihaosun1124.github.io/projects/offlinerl_kit/</loc>
-<lastmod>2024-05-03T13:32:54+00:00</lastmod>
+<lastmod>2024-09-26T02:04:11+00:00</lastmod>
 </url>
 <url>
 <loc>https://yihaosun1124.github.io/</loc>
