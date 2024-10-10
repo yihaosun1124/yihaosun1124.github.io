@@ -21,7 +21,7 @@ M.Sc. Student, <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA Grou
 Supervisor: Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK">Yang Yu</a> <br/>
 Email: sunyh@lamda.nju.edu.cn <br/>
 
-[ [Github](https://github.com/yihaosun1124) ] [ [Zhihu](https://www.zhihu.com/people/hao-yue-dang-kong-55-6) ]
+[ [Google Scholar](https://scholar.google.com/citations?user=pFNG8fMAAAAJ&hl=en) ] [ [Github](https://github.com/yihaosun1124) ]
 
 #### Biography
 Currently I am a third year graduate student of <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
