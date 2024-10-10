@@ -24,13 +24,11 @@ Email: sunyh@lamda.nju.edu.cn <br/>
 [ [Google Scholar](https://scholar.google.com/citations?user=pFNG8fMAAAAJ&hl=en) ] [ [Github](https://github.com/yihaosun1124) ]
 
 #### Biography
-Currently I am a third year graduate student of <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
+I just had a three-year memorable graduate study at <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
 <a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a> and a member of 
 <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx" target="_blank">LAMDA</a> Group, led by Professor <a href="http://cs.nju.edu.cn/zhouzh/" target="_blank">Zhi-Hua Zhou.</a>
 
-I received my B.Sc. degree in Software Enginering in <a href="https://sw.scu.edu.cn/" target="_blank">School of software</a> in June 2021 from <a href="https://www.scu.edu.cn/" target="_blank">Sichuan University</a>.
-In September 2021, I was admitted to study for M.Sc. degree in Nanjing University under the supervision of 
-Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK" target="_blank">Yang Yu</a> without entrance examination, respectively.
+Now, I'm waiting the approval of my study permit for PhD study in Canada. Hope I can be on track as soon as possible.
 
 #### Research Interests
 My research interest is reinforcement learning (RL). Currently, I focus on offline reinforcement learning (Offline RL) and model-based reinforcement learning (MBRL).
