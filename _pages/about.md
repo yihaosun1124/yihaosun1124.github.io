@@ -14,21 +14,15 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-M.Sc. Student, <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA Group</a><br>
-  <a href="https://cs.nju.edu.cn/main.htm">Department of Computer Science and Technology</a> <br />
-  <a href="http://keysoftlab.nju.edu.cn/">National Key Laboratory for Novel Software Technology</a> 
-  <a href="http://www.nju.edu.cn/">Nanjing University</a><br />
-Supervisor: Prof. <a href="https://www.wolai.com/eyounx/dtR1MTyRXS5tP5Cex4KtdK">Yang Yu</a> <br/>
-Email: sunyh@lamda.nju.edu.cn <br/>
+PhD Student, <a href="https://mila.quebec/en">Mila</a> & <a href="https://www.umontreal.ca/">University of Montreal</a><br>
+Supervisor: Prof. <a href="https://pierrelucbacon.com/">Pierre-Luc Bacon</a> <br/>
+Email: yihao.sun@mila.quebec <br/>
 
 [ [Google Scholar](https://scholar.google.com/citations?user=pFNG8fMAAAAJ&hl=en) ] [ [Github](https://github.com/yihaosun1124) ]
 
 #### Biography
-I just had a three-year memorable graduate study at <a href="http://ai.nju.edu.cn/" target="_blank">School of Artificial Intelligence</a> in
-<a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a>. I was also a member of 
-<a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx" target="_blank">LAMDA</a> Group, led by Professor <a href="http://cs.nju.edu.cn/zhouzh/" target="_blank">Zhi-Hua Zhou.</a>
-
-Now, I'm waiting the approval of my study permit for PhD study in Canada. Hope I can be on track as soon as possible.
+I'm a first-year PhD student at <a href="https://mila.quebec/en">Mila</a> & <a href="https://www.umontreal.ca/">University of Montreal</a>. Before this, I just had a three-year memorable graduate study in <a href="http://www.lamda.nju.edu.cn/CH.MainPage.ashx" target="_blank">LAMDA</a> Group,
+<a href="http://www.nju.edu.cn/" target="_blank">Nanjing University</a>.
 
 #### Research Interests
 My research interest is reinforcement learning (RL). Currently, I focus on offline reinforcement learning (Offline RL) and model-based reinforcement learning (MBRL).
