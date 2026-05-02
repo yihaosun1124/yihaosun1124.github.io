@@ -2,7 +2,7 @@
 layout: page
 title: VLARLKit
 description: An elegant and researcher-friendly RL library for Vision-Language-Action (VLA) models.
-img: assets/img/projects/vlarlkit_logo.svg
+img: assets/img/projects/vlarlkit_logo.png
 importance: 1
 category: work
 ---
