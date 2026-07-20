@@ -135,6 +135,7 @@ Expected: the retained portrait, both project logos, `CNAME`, `LICENSE`, and `do
 Create `.gitignore`:
 
 ```gitignore
+.worktrees/
 _site/
 .jekyll-cache/
 .sass-cache/
