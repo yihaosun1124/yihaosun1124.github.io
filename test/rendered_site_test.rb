@@ -33,7 +33,13 @@ class RenderedSiteTest < Minitest::Test
   end
 
   def test_project_links_use_descriptive_label
-    assert_equal 2, @html.scan(">Github repository</a>").length
+    assert_equal 2, @html.scan(">github repository</a>").length
+    refute_includes @html, ">Github repository</a>"
+  end
+
+  def test_homepage_footer_credits_the_reference_template
+    assert_includes @html, '<footer class="site-footer">'
+    assert_includes @html, 'Website template from <a href="https://github.com/leonidk/leonidk.github.io">here</a>'
   end
 
   def test_build_does_not_publish_tmp_directory

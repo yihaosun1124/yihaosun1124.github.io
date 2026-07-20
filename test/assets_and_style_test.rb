@@ -14,6 +14,12 @@ class AssetsAndStyleTest < Minitest::Test
     assert_match(/@media \(max-width: 640px\)/, style)
   end
 
+  def test_template_credit_is_presented_as_a_subtle_centered_footer
+    style = File.read(File.join(ROOT, "assets/css/style.scss"))
+    assert_match(/\.site-footer\s*\{[^}]*text-align:\s*center;/m, style)
+    assert_match(/\.site-footer\s*\{[^}]*color:\s*var\(--muted\);/m, style)
+  end
+
   def test_required_images_exist
     %w[
       assets/img/avatar.jpg
