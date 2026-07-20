@@ -15,12 +15,35 @@
     - name: Yang Yu
   venue: ICML
   year: 2026
-  image: /assets/img/research/vla-mbpo-placeholder.svg
+  image: /assets/img/research/vla-mbpo.jpg
   image_alt: Placeholder illustration for the VLA-MBPO research paper
   summary: >-
-    VLA-MBPO combines a unified multimodal world model, interleaved multi-view decoding, and chunk-level branched rollout to improve the practicality and sample efficiency of reinforcement learning for Vision-Language-Action models.
+    VLA-MBPO integrates a series of pratical techniques to train VLAs in world models, including (i) adapting unified multimodal models (UMMs) for data-efficient world modeling; (ii) an interleaved view decoding mechanism to enforce multi-view consistency; and (iii) chunk-level branched rollout to mitigate error compounding.
   links:
     - label: paper
       url: https://arxiv.org/abs/2603.20607
     - label: project page
       url: https://rhx11111.github.io/VLA-MBPO/
+
+
+- title: Model-Bellman Inconsistency for Model-based Offline Reinforcement Learning
+  authors:
+    - name: Yihao Sun
+      equal: true
+      self: true
+    - name: Jiaji Zhang
+      equal: true
+    - name: Chengxing Jia
+    - name: Haoxin Lin
+    - name: Junyin Ye
+    - name: Yang Yu
+  venue: ICML
+  year: 2023
+  image: /assets/img/research/mobile.jpg
+  summary: >-
+    MOBILE proposes a novel uncertainty quantification for uncertainty-driven model-based offline RL, which can better estimate the ideal uncertainty quantification, i.e., the Bellman error
+  links:
+    - label: paper
+      url: https://proceedings.mlr.press/v202/sun23q/sun23q.pdf
+    - label: code
+      url: https://github.com/yihaosun1124/mobile

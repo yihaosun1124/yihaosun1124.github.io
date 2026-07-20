@@ -3,7 +3,7 @@
   image: /assets/img/projects/vlarlkit_logo.png
   image_alt: VLARLKit logo
   description: >-
-    A researcher-friendly PyTorch reinforcement-learning library for Vision-Language-Action models, with cleanly separated policy, rollout, runner, and model components and support for asynchronous off-policy training.
+    A researcher-friendly PyTorch reinforcement-learning library for Vision-Language-Action models, with clean modular design and decoupled env denpendency.
 
 - name: OfflineRL-Kit
   repository: https://github.com/yihaosun1124/OfflineRL-Kit
