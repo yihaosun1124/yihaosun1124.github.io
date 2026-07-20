@@ -1,0 +1,21 @@
+name: Yihao Sun
+role: Ph.D. Student in Computer Science
+portrait: /assets/img/avatar.jpg
+portrait_alt: Portrait of Yihao Sun
+affiliations:
+  - name: Mila - Quebec AI Institute
+    url: https://mila.quebec/en
+  - name: Université de Montréal
+    url: https://www.umontreal.ca/en/
+advisor:
+  name: Pierre-Luc Bacon
+  url: https://pierrelucbacon.com/
+bio: >-
+  I am a Ph.D. student in Computer Science at Université de Montréal and Mila - Quebec AI Institute, advised by Prof. Pierre-Luc Bacon. Before starting my Ph.D., I completed my M.Sc. in the LAMDA Group at Nanjing University.
+research_interests: >-
+  My research centers on reinforcement learning for general-purpose embodied intelligence, with a particular focus on world models and model-based reinforcement learning. I am interested in building generative world models for embodied environments and developing algorithms that use them for efficient policy learning, planning, and adaptation.
+links:
+  email: yihao.sun@mila.quebec
+  github: https://github.com/yihaosun1124
+  scholar: https://scholar.google.com/citations?user=pFNG8fMAAAAJ&hl=en
+  cv: /CV/yihaosun_cv.pdf

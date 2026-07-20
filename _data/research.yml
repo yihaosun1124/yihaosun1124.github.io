@@ -1,0 +1,26 @@
+- title: Towards Practical World Model-based Reinforcement Learning for Vision-Language-Action Models
+  authors:
+    - name: Zhilong Zhang
+      equal: true
+    - name: Haoxiang Ren
+      equal: true
+    - name: Yihao Sun
+      equal: true
+      self: true
+    - name: Yifei Sheng
+    - name: Haonan Wang
+    - name: Haoxin Lin
+    - name: Zhichao Wu
+    - name: Pierre-Luc Bacon
+    - name: Yang Yu
+  venue: ICML
+  year: 2026
+  image: /assets/img/research/vla-mbpo-placeholder.svg
+  image_alt: Placeholder illustration for the VLA-MBPO research paper
+  summary: >-
+    VLA-MBPO combines a unified multimodal world model, interleaved multi-view decoding, and chunk-level branched rollout to improve the practicality and sample efficiency of reinforcement learning for Vision-Language-Action models.
+  links:
+    - label: paper
+      url: https://arxiv.org/abs/2603.20607
+    - label: project page
+      url: https://rhx11111.github.io/VLA-MBPO/
