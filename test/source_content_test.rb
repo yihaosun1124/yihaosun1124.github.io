@@ -50,4 +50,19 @@ class SourceContentTest < Minitest::Test
     refute File.exist?(File.join(ROOT, "Dockerfile"))
     refute File.exist?(File.join(ROOT, "docker-compose.yml"))
   end
+
+  def test_remaining_legacy_template_configuration_is_gone
+    %w[
+      .all-contributorsrc
+      .github/ISSUE_TEMPLATE/bug_report.md
+      .github/ISSUE_TEMPLATE/feature_request.md
+      .github/stale.yml
+      .github/workflows/deploy-docker-tag.yml
+      .github/workflows/deploy-image.yml
+      .github/workflows/deploy.yml
+      .pre-commit-config.yaml
+    ].each do |path|
+      refute File.exist?(File.join(ROOT, path)), "expected #{path} to be removed"
+    end
+  end
 end
