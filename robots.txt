@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://yihaosun1124.github.io/sitemap.xml
