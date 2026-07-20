@@ -18,9 +18,15 @@ class SourceContentTest < Minitest::Test
     profile = load_yaml("_data/profile.yml")
     assert_equal "Yihao Sun", profile.fetch("name")
     assert_equal "Ph.D. Student in Computer Science", profile.fetch("role")
+    assert_includes profile.fetch("bio"), "May 2025 to present"
     assert_equal "yihao.sun@mila.quebec", profile.dig("links", "email")
     assert_equal "/CV/yihaosun_cv.pdf", profile.dig("links", "cv")
     assert_equal "/assets/img/avatar.jpg", profile.fetch("portrait")
+  end
+
+  def test_tmp_is_excluded_from_the_site_build
+    config = load_yaml("_config.yml")
+    assert_includes config.fetch("exclude"), "tmp"
   end
 
   def test_initial_research_collection_has_one_requested_paper

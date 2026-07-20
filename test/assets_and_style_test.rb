@@ -25,11 +25,10 @@ class AssetsAndStyleTest < Minitest::Test
     end
   end
 
-  def test_cv_is_an_unchanged_copy
-    source = "/Users/yihaosun/Downloads/yihaosun_cv.pdf"
+  def test_cv_has_the_expected_content_hash
     public_copy = File.join(ROOT, "CV/yihaosun_cv.pdf")
     assert File.file?(public_copy)
-    assert_equal Digest::SHA256.file(source).hexdigest, Digest::SHA256.file(public_copy).hexdigest
+    assert_equal "c26d01cbf145b4d61ecb455619fbfcd071029ab2e4e3848820153be503e5f38d", Digest::SHA256.file(public_copy).hexdigest
   end
 
   def test_linked_local_assets_exist_in_built_site

@@ -13,12 +13,17 @@ class RenderedSiteTest < Minitest::Test
 
   def test_homepage_contains_requested_content
     assert_includes @html, "Yihao Sun"
+    assert_includes @html, "May 2025 to present"
     assert_includes @html, "Towards Practical World Model-based Reinforcement Learning for Vision-Language-Action Models"
     visible_text = @html.gsub(/<[^>]+>/, " ").gsub(/\s+/, " ")
     assert_includes visible_text, "*: equal contribution, see the CV for the full list"
     assert_includes @html, "VLARLKit"
     assert_includes @html, "OfflineRL-Kit"
     assert_includes @html, "/CV/yihaosun_cv.pdf"
+  end
+
+  def test_build_does_not_publish_tmp_directory
+    refute Dir.exist?(File.join(ROOT, "_site", "tmp"))
   end
 
   def test_initial_homepage_has_one_research_entry_and_two_project_entries

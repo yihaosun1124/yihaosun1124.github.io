@@ -11,7 +11,7 @@ advisor:
   name: Pierre-Luc Bacon
   url: https://pierrelucbacon.com/
 bio: >-
-  I am a Ph.D. student in Computer Science at Université de Montréal and Mila - Quebec AI Institute, advised by Prof. Pierre-Luc Bacon. Before starting my Ph.D., I completed my M.Sc. in the LAMDA Group at Nanjing University.
+  I have been a Ph.D. student in Computer Science at Université de Montréal and Mila - Quebec AI Institute from May 2025 to present, advised by Prof. Pierre-Luc Bacon. Before starting my Ph.D., I completed my M.Sc. in the LAMDA Group at Nanjing University.
 research_interests: >-
   My research centers on reinforcement learning for general-purpose embodied intelligence, with a particular focus on world models and model-based reinforcement learning. I am interested in building generative world models for embodied environments and developing algorithms that use them for efficient policy learning, planning, and adaptation.
 links:
