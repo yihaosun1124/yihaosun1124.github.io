@@ -1053,14 +1053,12 @@ git add README.md LICENSE test/documentation_test.rb docs/superpowers
 git commit -m "docs: add homepage maintenance guide"
 ```
 
-- [ ] **Step 7: Review the final diff and push `master`**
+- [ ] **Step 7: Review the final diff and hand off for final branch review**
 
 ```bash
 git status --short --branch
 git diff --stat origin/master...HEAD
 git log --oneline --decorate origin/master..HEAD
-git push origin master
-git status --short --branch
 ```
 
-Expected: the diff contains only the approved redesign, the push succeeds, and final status reports clean `master` tracking `origin/master` with no ahead/behind count.
+Expected: the diff contains only the approved redesign and the feature worktree is clean. The controller performs the whole-branch review, integrates the reviewed commits into `master`, and pushes `origin/master`.
