@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="/assets/img/peep.png">
+    <link rel="icon" type="image/png" href="/assets/img/peep.jpg">
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
@@ -47,14 +47,27 @@
     
       <article class="entry research-entry">
         <div class="entry-media">
-          <img src="/assets/img/research/vla-mbpo-placeholder.svg" alt="Placeholder illustration for the VLA-MBPO research paper">
+          <img src="/assets/img/research/vla-mbpo.jpg" alt="Placeholder illustration for the VLA-MBPO research paper">
         </div>
         <div class="entry-copy">
           <h3>Towards Practical World Model-based Reinforcement Learning for Vision-Language-Action Models</h3>
           <p class="authors">Zhilong Zhang<sup>*</sup>, Haoxiang Ren<sup>*</sup>, <strong>Yihao Sun</strong><sup>*</sup>, Yifei Sheng, Haonan Wang, Haoxin Lin, Zhichao Wu, Pierre-Luc Bacon, Yang Yu</p>
           <p class="venue"><em>ICML</em>, 2026</p>
           <p class="entry-links"><a href="https://arxiv.org/abs/2603.20607">paper</a><span aria-hidden="true"> / </span><a href="https://rhx11111.github.io/VLA-MBPO/">project page</a></p>
-          <p>VLA-MBPO combines a unified multimodal world model, interleaved multi-view decoding, and chunk-level branched rollout to improve the practicality and sample efficiency of reinforcement learning for Vision-Language-Action models.</p>
+          <p>VLA-MBPO integrates a series of pratical techniques to train VLAs in world models, including (i) adapting unified multimodal models (UMMs) for data-efficient world modeling; (ii) an interleaved view decoding mechanism to enforce multi-view consistency; and (iii) chunk-level branched rollout to mitigate error compounding.</p>
+        </div>
+      </article>
+    
+      <article class="entry research-entry">
+        <div class="entry-media">
+          <img src="/assets/img/research/mobile.jpg" alt="">
+        </div>
+        <div class="entry-copy">
+          <h3>Model-Bellman Inconsistency for Model-based Offline Reinforcement Learning</h3>
+          <p class="authors"><strong>Yihao Sun</strong><sup>*</sup>, Jiaji Zhang<sup>*</sup>, Chengxing Jia, Haoxin Lin, Junyin Ye, Yang Yu</p>
+          <p class="venue"><em>ICML</em>, 2023</p>
+          <p class="entry-links"><a href="https://proceedings.mlr.press/v202/sun23q/sun23q.pdf">paper</a><span aria-hidden="true"> / </span><a href="https://github.com/yihaosun1124/mobile">code</a></p>
+          <p>MOBILE proposes a novel uncertainty quantification for uncertainty-driven model-based offline RL, which can better estimate the ideal uncertainty quantification, i.e., the Bellman error</p>
         </div>
       </article>
     
@@ -74,7 +87,7 @@
         <div class="entry-copy">
           <h3>VLARLKit</h3>
           <p class="entry-links"><a href="https://github.com/VLARLKit/VLARLKit">github repository</a></p>
-          <p>A researcher-friendly PyTorch reinforcement-learning library for Vision-Language-Action models, with cleanly separated policy, rollout, runner, and model components and support for asynchronous off-policy training.</p>
+          <p>A researcher-friendly PyTorch reinforcement-learning library for Vision-Language-Action models, with clean modular design and decoupled env denpendency.</p>
         </div>
       </article>
     
