@@ -141,6 +141,9 @@ h3 {
   margin: 1.5rem auto; }
 
 .site-footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 32px;
   padding: 2.5%;
   color: var(--muted);
