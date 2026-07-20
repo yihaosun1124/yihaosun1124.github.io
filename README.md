@@ -1,7 +1,5 @@
 # Yihao Sun - Personal Homepage
 
-This repository contains the Jekyll source for [www.yihaosun.cn](https://www.yihaosun.cn). GitHub Pages builds the site from the `master` branch; the previous al-folio site is preserved on `legacy`.
-
 ## Edit the site
 
 - Personal information: edit `_data/profile.yml`. The portrait path is configured there; the current image is `assets/img/avatar.jpg`.
