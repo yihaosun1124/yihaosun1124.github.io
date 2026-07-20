@@ -19,7 +19,7 @@ The current `test/` and `docs/` trees will be removed from `master` and ignored.
 
 The root `.gitignore` will use grouped, root-anchored rules where appropriate:
 
-- Local agents and editors: `/.claude/`, `/.codex/`, `/.idea/`, `/.vscode/`, and `/.worktrees/`.
+- Local agents and editors: `/.claude/`, `/.codex/`, `/.superpowers/`, `/.idea/`, `/.vscode/`, and `/.worktrees/`.
 - Operating-system and editor noise: `.DS_Store`, `Thumbs.db`, Vim swap files, and editor backup files.
 - Jekyll and Sass output: `/_site/`, `/.jekyll-cache/`, `/.jekyll-metadata`, and `/.sass-cache/`.
 - Ruby/Bundler and temporary output: `/.bundle/`, `/vendor/`, `/tmp/`, `/coverage/`, and log files.

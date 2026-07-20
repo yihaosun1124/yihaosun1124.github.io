@@ -48,6 +48,7 @@ class RepositoryHygieneTest < Minitest::Test
     expected_rules = %w[
       /.claude/
       /.codex/
+      /.superpowers/
       /.idea/
       /.vscode/
       /.worktrees/
@@ -111,6 +112,7 @@ Thumbs.db
 # Editors and local agents
 /.claude/
 /.codex/
+/.superpowers/
 /.idea/
 /.vscode/
 /.worktrees/
@@ -213,6 +215,7 @@ Run:
 for ignored_path in \
   .claude/settings.local.json \
   .codex/settings.json \
+  .superpowers/sdd/progress.md \
   .idea/workspace.xml \
   .vscode/settings.json \
   .ruby-lsp/state.json \
