@@ -26,7 +26,7 @@ All visible copy is English. Current facts come from `/Users/yihaosun/Downloads/
 ### Profile
 
 - Name: Yihao Sun.
-- Position: Ph.D. student in Computer Science at Universite de Montreal and Mila - Quebec AI Institute, from May 2025 to present.
+- Position: Ph.D. student in Computer Science at Université de Montréal and Mila - Quebec AI Institute, from May 2025 to present.
 - Supervisor: Pierre-Luc Bacon.
 - Research focus: reinforcement learning for general-purpose embodied intelligence, especially world models and model-based reinforcement learning for efficient policy learning, planning, and adaptation.
 - Links: `yihao.sun@mila.quebec`, GitHub, Google Scholar, and the local CV.
