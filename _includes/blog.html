@@ -1,0 +1,10 @@
+{% if site.posts.size > 0 %}
+  <section class="content-section" aria-labelledby="blog-heading">
+    <header class="section-header"><h2 id="blog-heading">Blog</h2></header>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}

@@ -1,0 +1,22 @@
+{% assign profile = site.data.profile %}
+<section class="profile" aria-labelledby="profile-name">
+  <div class="profile-copy">
+    <h1 id="profile-name">{{ profile.name }}</h1>
+    <p class="position">
+      {{ profile.role }} at
+      {% for affiliation in profile.affiliations %}<a href="{{ affiliation.url }}">{{ affiliation.name }}</a>{% unless forloop.last %} &amp; {% endunless %}{% endfor %}.
+      Advised by Prof. <a href="{{ profile.advisor.url }}">{{ profile.advisor.name }}</a>.
+    </p>
+    <p>{{ profile.bio }}</p>
+    <p>{{ profile.research_interests }}</p>
+    <p class="profile-links">
+      <a href="mailto:{{ profile.links.email }}">Email</a><span aria-hidden="true"> / </span>
+      <a href="{{ profile.links.github }}">GitHub</a><span aria-hidden="true"> / </span>
+      <a href="{{ profile.links.scholar }}">Google Scholar</a><span aria-hidden="true"> / </span>
+      <a href="{{ profile.links.cv }}">CV</a>
+    </p>
+  </div>
+  <div class="profile-portrait">
+    <img src="{{ profile.portrait | relative_url }}" alt="{{ profile.portrait_alt }}">
+  </div>
+</section>

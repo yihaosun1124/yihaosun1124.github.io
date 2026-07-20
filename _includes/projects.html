@@ -1,0 +1,19 @@
+<section class="content-section" aria-labelledby="projects-heading">
+  <header class="section-header">
+    <h2 id="projects-heading">Open Source Projects</h2>
+  </header>
+  <div class="entry-list">
+    {% for project in site.data.projects %}
+      <article class="entry project-entry">
+        <div class="entry-media">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt }}">
+        </div>
+        <div class="entry-copy">
+          <h3>{{ project.name }}</h3>
+          <p class="entry-links"><a href="{{ project.repository }}">code</a></p>
+          <p>{{ project.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
