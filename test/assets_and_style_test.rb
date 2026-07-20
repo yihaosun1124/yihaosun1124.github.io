@@ -16,6 +16,9 @@ class AssetsAndStyleTest < Minitest::Test
 
   def test_template_credit_is_presented_as_a_subtle_centered_footer
     style = File.read(File.join(ROOT, "assets/css/style.scss"))
+    assert_match(/\.site-footer\s*\{[^}]*display:\s*flex;/m, style)
+    assert_match(/\.site-footer\s*\{[^}]*justify-content:\s*center;/m, style)
+    assert_match(/\.site-footer\s*\{[^}]*width:\s*100%;/m, style)
     assert_match(/\.site-footer\s*\{[^}]*text-align:\s*center;/m, style)
     assert_match(/\.site-footer\s*\{[^}]*color:\s*var\(--muted\);/m, style)
   end
@@ -23,6 +26,7 @@ class AssetsAndStyleTest < Minitest::Test
   def test_required_images_exist
     %w[
       assets/img/avatar.jpg
+      assets/img/peep.png
       assets/img/projects/vlarlkit_logo.png
       assets/img/projects/offlinerl_kit_logo.png
       assets/img/research/vla-mbpo-placeholder.svg

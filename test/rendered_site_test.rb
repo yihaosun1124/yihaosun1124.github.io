@@ -42,6 +42,10 @@ class RenderedSiteTest < Minitest::Test
     assert_includes @html, 'Website template from <a href="https://github.com/leonidk/leonidk.github.io">here</a>'
   end
 
+  def test_homepage_restores_the_original_favicon
+    assert_includes @html, '<link rel="icon" type="image/png" href="/assets/img/peep.png">'
+  end
+
   def test_build_does_not_publish_tmp_directory
     refute Dir.exist?(File.join(ROOT, "_site", "tmp"))
   end
