@@ -1,8 +1,37 @@
-.worktrees/
+# Operating-system metadata
 .DS_Store
-_site/
-.jekyll-cache/
-.sass-cache/
-.bundle/
-vendor/
-tmp/
+Thumbs.db
+
+# Editors and local agents
+/.claude/
+/.codex/
+/.superpowers/
+/.idea/
+/.vscode/
+/.worktrees/
+/.ruby-lsp/
+*.swp
+*.swo
+*~
+
+# Local environment files
+/.env
+/.env.*
+!/.env.example
+
+# Jekyll and Sass output
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+/.sass-cache/
+
+# Ruby, dependency, and generated output
+/.bundle/
+/vendor/
+/tmp/
+/coverage/
+*.log
+
+# Development-only repository content
+/docs/
+/test/

@@ -13,5 +13,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - LICENSE
   - tmp
   - vendor
