@@ -26,7 +26,7 @@
       url: https://rhx11111.github.io/VLA-MBPO/
 
 
-- title: ADM-v2: Pursuing Full-Horizon Roll-out in Dynamics Models for Offline Policy Learning and Evaluation
+- title: "ADM-v2: Pursuing Full-Horizon Roll-out in Dynamics Models for Offline Policy Learning and Evaluation"
   authors:
     - name: Haoxin Lin
     - name: Siyuan Xiao
@@ -70,7 +70,7 @@
       url: https://github.com/HxLyn3/ADMPO
 
 
-- title: Flow to Better: Offline Preference-based Reinforcement Learning via Preferred Trajectory Generation
+- title: "Flow to Better: Offline Preference-based Reinforcement Learning via Preferred Trajectory Generation"
   authors:
     - name: Zhilong Zhang
       equal: true
