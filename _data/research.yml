@@ -26,51 +26,26 @@
       url: https://rhx11111.github.io/VLA-MBPO/
 
 
-- title: Model-Bellman Inconsistency for Model-based Offline Reinforcement Learning
+- title: ADM-v2: Pursuing Full-Horizon Roll-out in Dynamics Models for Offline Policy Learning and Evaluation
   authors:
-    - name: Yihao Sun
-      equal: true
-      self: true
-    - name: Jiaji Zhang
-      equal: true
-    - name: Chengxing Jia
     - name: Haoxin Lin
-    - name: Junyin Ye
-    - name: Yang Yu
-  venue: ICML
-  year: 2023
-  image: /assets/img/research/mobile.jpg
-  summary: >-
-    MOBILE proposes a novel uncertainty quantification for uncertainty-driven model-based offline RL, which can better estimate the ideal uncertainty quantification, i.e., the Bellman error
-  links:
-    - label: paper
-      url: https://proceedings.mlr.press/v202/sun23q/sun23q.pdf
-    - label: code
-      url: https://github.com/yihaosun1124/mobile
-
-
-- title: Flow to Better{:} Offline Preference-based Reinforcement Learning via Preferred Trajectory Generation
-  authors:
+    - name: Siyuan Xiao
+    - name: Yi-Chen Li
     - name: Zhilong Zhang
-      equal: true
-      self: true
     - name: Yihao Sun
-      equal: true
       self: true
-    - name: Junyin Ye
-    - name: Tian-shuo Liu
-    - name: Jiaji Zhang
+    - name: Chengxing Jia
     - name: Yang Yu
   venue: ICLR
-  year: 2024
-  image: /assets/img/research/ftb.png
+  year: 2026
+  image: /assets/img/research/adm-v2.jpg
   summary: >-
-    FTB considers the offline preference-based RL as a generative modeling problem, which leverages the pairwise preference relationship to guide a generative model in producing preferred trajectories.
+    ADM-v2 not only enhances the accuracy of direct predictions for making fullhorizon rollouts but also supports parallel estimation of the any-step prediction uncertainty to improve efficiency. 
   links:
     - label: paper
-      url: https://proceedings.iclr.cc/paper_files/paper/2024/file/8951f484e8242b7f74817fdc390dd954-Paper-Conference.pdf
-    - label: project page
-      url: https://github.com/Zzl35/flow-to-better
+      url: https://openreview.net/pdf?id=ICbXEwqpga
+    - label: code
+      url: https://github.com/HxLyn3/adm2
 
 
 - title: Any-step Dynamics Model Improves Future Predictions for Online and Offline Reinforcement Learning
@@ -94,24 +69,49 @@
     - label: code
       url: https://github.com/HxLyn3/ADMPO
 
-- title: ADM-v2{:} Pursuing Full-Horizon Roll-out in Dynamics Models for Offline Policy Learning and Evaluation
+
+- title: Flow to Better: Offline Preference-based Reinforcement Learning via Preferred Trajectory Generation
   authors:
-    - name: Haoxin Lin
-    - name: Siyuan Xiao
-    - name: Yi-Chen Li
     - name: Zhilong Zhang
-    - name: Yihao Sun
+      equal: true
       self: true
-    - name: Chengxing Jia
+    - name: Yihao Sun
+      equal: true
+      self: true
+    - name: Junyin Ye
+    - name: Tian-shuo Liu
+    - name: Jiaji Zhang
     - name: Yang Yu
   venue: ICLR
-  year: 2026
-  image: /assets/img/research/adm-v2.jpg
+  year: 2024
+  image: /assets/img/research/ftb.png
   summary: >-
-    ADM-v2 not only enhances the accuracy of direct predictions for making fullhorizon rollouts but also supports parallel estimation of the any-step prediction uncertainty to improve efficiency. 
+    FTB considers the offline preference-based RL as a generative modeling problem, which leverages the pairwise preference relationship to guide a generative model in producing preferred trajectories.
   links:
     - label: paper
-      url: https://openreview.net/pdf?id=ICbXEwqpga
-    - label: code
-      url: https://github.com/HxLyn3/adm2
+      url: https://proceedings.iclr.cc/paper_files/paper/2024/file/8951f484e8242b7f74817fdc390dd954-Paper-Conference.pdf
+    - label: project page
+      url: https://github.com/Zzl35/flow-to-better
 
+
+- title: Model-Bellman Inconsistency for Model-based Offline Reinforcement Learning
+  authors:
+    - name: Yihao Sun
+      equal: true
+      self: true
+    - name: Jiaji Zhang
+      equal: true
+    - name: Chengxing Jia
+    - name: Haoxin Lin
+    - name: Junyin Ye
+    - name: Yang Yu
+  venue: ICML
+  year: 2023
+  image: /assets/img/research/mobile.jpg
+  summary: >-
+    MOBILE proposes a novel uncertainty quantification for uncertainty-driven model-based offline RL, which can better estimate the ideal uncertainty quantification, i.e., the Bellman error
+  links:
+    - label: paper
+      url: https://proceedings.mlr.press/v202/sun23q/sun23q.pdf
+    - label: code
+      url: https://github.com/yihaosun1124/mobile
