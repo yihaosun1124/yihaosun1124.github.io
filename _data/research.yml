@@ -74,7 +74,6 @@
   authors:
     - name: Zhilong Zhang
       equal: true
-      self: true
     - name: Yihao Sun
       equal: true
       self: true
