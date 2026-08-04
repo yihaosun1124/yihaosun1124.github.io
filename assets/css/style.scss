@@ -70,7 +70,7 @@ h3 {
 
 .site-shell {
   width: 100%;
-  max-width: 800px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 24px 20px 40px;
 }
@@ -157,7 +157,7 @@ h3 {
 }
 
 .post {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -168,6 +168,10 @@ h3 {
 
 .post-content {
   font-size: 16px;
+}
+
+.post-content h1 {
+  text-align: left;
 }
 
 .post-content img {
