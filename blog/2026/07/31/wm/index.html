@@ -11,6 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/assets/img/peep.jpg">
+    
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: { "[+]": [["$", "$"]] }
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+    
     <link rel="stylesheet" href="/assets/css/style.css">
   </head>
   <body>
@@ -49,15 +59,13 @@
 
 <h3 id="quadratic-error-compounding-is-a-worst-case-guarantee-not-a-universal-law">Quadratic error compounding is a worst-case guarantee, not a universal law</h3>
 
-<p>Compounding error occurs because BC is trained on states visited by the expert but deployed on states visited by its own policy. An early mistake can move the policy outside the demonstration distribution, making further mistakes more likely. Let (\pi_E) and (\pi_{BC}) denote the expert and imitation policies, respectively. For a (\gamma)-discounted MDP with rewards bounded by (R_{\max}), the value gap can be bounded as [9]</p>
+<p>Compounding error occurs because BC is trained on states visited by the expert but deployed on states visited by its own policy. An early mistake can move the policy outside the demonstration distribution, making further mistakes more likely. Let $\pi_E$ and $\pi_{BC}$ denote the expert and imitation policies, respectively. For a $\gamma$-discounted MDP with rewards bounded by $R_{\max}$, the value gap can be bounded as [9]</p>
 
-<p>[
-\begin{aligned}
+\[\begin{aligned}
 V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\epsilon}_{\pi}}.
-\end{aligned}
-]</p>
+\end{aligned}\]
 
-<p>Here, (d_{\pi_E}) is the expert’s discounted state distribution and (\bar{\epsilon}_{\pi}) upper-bounds the average KL divergence between the two policies on expert states. The factor ((1-\gamma)^{-2}) shows how a small one-step imitation error can be amplified quadratically in the effective horizon.</p>
+<p>Here, $d_{\pi_E}$ is the expert’s discounted state distribution and $\bar{\epsilon}_{\pi}$ upper-bounds the average KL divergence between the two policies on expert states. The factor $(1-\gamma)^{-2}$ shows how a small one-step imitation error can be amplified quadratically in the effective horizon.</p>
 
 <p>However, this quadratic dependence is only a worst-case guarantee. Foster et al. show that, under certain conditions, BC can have much milder—and sometimes even horizon-independent—dependence on the task horizon [10].</p>
 
@@ -71,7 +79,7 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>The core limitation of BC is state coverage: its training data contain only the states visited by a finite set of expert demonstrations. When the initial-state distribution is broad or the dynamics are stochastic, the set of states that may be encountered at deployment grows rapidly, while the demonstrated subset remains narrow. Reliable BC would therefore require demonstrations across many combinations of object poses, contacts, sensor noise, and execution outcomes, causing the required dataset to grow quickly with task variability.</p>
 
-<p>RL addresses this problem by reducing distribution shift. BC is trained under the expert distribution (d_{\pi_E}) but deployed under (d_{\pi_{BC}}); RL instead collects experience from the current policy, so its training distribution continually tracks the states that the policy actually visits. This difference is especially visible when the environment is highly variable. In the dexterous manipulation tasks studied by Rajeswaran et al., object, target, door, and nail positions were randomized; BC-only policies were usually unsuccessful, whereas RL fine-tuning learned all four tasks [15]. HIL-SERL reports a similar result on real robots with randomized initial states, dynamic objects, and external perturbations: its RL policies reached near-perfect success and substantially outperformed matched imitation-learning baselines [12].</p>
+<p>RL addresses this problem by reducing distribution shift. BC is trained under the expert distribution $d_{\pi_E}$ but deployed under $d_{\pi_{BC}}$; RL instead collects experience from the current policy, so its training distribution continually tracks the states that the policy actually visits. This difference is especially visible when the environment is highly variable. In the dexterous manipulation tasks studied by Rajeswaran et al., object, target, door, and nail positions were randomized; BC-only policies were usually unsuccessful, whereas RL fine-tuning learned all four tasks [15]. HIL-SERL reports a similar result on real robots with randomized initial states, dynamic objects, and external perturbations: its RL policies reached near-perfect success and substantially outperformed matched imitation-learning baselines [12].</p>
 
 <h3 id="2-rl-can-focus-learning-on-the-key-actions-that-determine-success">2. RL can focus learning on the key actions that determine success</h3>
 
