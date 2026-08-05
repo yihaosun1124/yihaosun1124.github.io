@@ -134,6 +134,10 @@ h3 {
   margin: 32px 0;
   text-align: center; }
 
+.post-author {
+  margin-bottom: 0.25rem;
+  color: var(--text); }
+
 .post-content {
   font-size: 16px; }
 
