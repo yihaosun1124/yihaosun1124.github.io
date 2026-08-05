@@ -1,3 +1,4 @@
+{%- assign cache_version = site.time | date: "%s" -%}
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' }}">
   <head>
@@ -21,7 +22,7 @@
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
     {% endif %}
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ cache_version }}">
   </head>
   <body>
     <main class="site-shell">
