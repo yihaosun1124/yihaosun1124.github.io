@@ -16,8 +16,11 @@ Create `_posts/YYYY-MM-DD-slug.md` with front matter like this:
 ---
 layout: post
 title: Your Post Title
+author: Your Name
 ---
 ```
+
+The `author` field controls the `By ...` line below the post title. If it is omitted, the site uses the `name` value in `_config.yml`.
 
 Write the post in Markdown below the front matter. The Blog section appears on the homepage automatically when at least one post exists.
 
