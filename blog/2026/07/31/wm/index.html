@@ -21,7 +21,7 @@
     </script>
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
     
-    <link rel="stylesheet" href="/assets/css/style.css?v=1785902335">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1785943789">
   </head>
   <body>
     <main class="site-shell">
@@ -39,9 +39,9 @@
 
 <p>BC is currently more common in real-world manipulation because it is stable, offline, and easy to scale, whereas real-world RL requires exploration, rewards, resets, safety mechanisms, and costly interaction [7]. Yet RL can improve beyond the demonstrations [6]. This raises two questions: is RL truly necessary for robotics, given that BC works better than classical critiques suggest? If so, how can we obtain its benefits without the burden of real-world interaction? I will first explain why BC works well, then identify RL’s irreplaceable advantages, and finally argue that world-model-based RL offers a promising way forward.</p>
 
-<h1 id="bc-vs-rl-for-robot-manipulation">BC vs. RL for Robot Manipulation</h1>
+<h1 id="i-bc-vs-rl-for-robot-manipulation">I. BC vs. RL for Robot Manipulation</h1>
 
-<h2 id="why-bcs-traditional-weaknesses-are-less-decisive-than-they-look">Why BC’s Traditional Weaknesses Are Less Decisive Than They Look</h2>
+<h2 id="11-why-bcs-traditional-weaknesses-are-less-decisive-than-they-look">1.1 Why BC’s Traditional Weaknesses Are Less Decisive Than They Look</h2>
 
 <p>Two objections to BC appear repeatedly in the RL literature:</p>
 
@@ -52,13 +52,13 @@
 
 <p>Both objections are real, but neither is as decisive for modern robot manipulation as it first appears.</p>
 
-<h3 id="demonstration-collection-is-becoming-cheaper">Demonstration collection is becoming cheaper</h3>
+<h3 id="1-demonstration-collection-is-becoming-cheaper">1) Demonstration collection is becoming cheaper</h3>
 
 <p>Robot demonstrations used to require expensive bilateral teleoperation systems, carefully instrumented labs, or substantial operator training. Newer interfaces have lowered that barrier. The Universal Manipulation Interface (UMI), for example, uses portable handheld grippers to collect information-rich, in-the-wild demonstrations without bringing a robot into every data-collection environment [8]. Other low-cost teleoperation systems and the aggregation of data across laboratories have pushed in the same direction.</p>
 
 <p>This does not make demonstration data free. Hardware diversity, calibration, data quality, and coverage of rare situations remain serious problems. <strong>But for many tasks, collecting a few hundred even thousand successful demonstrations may now be easier and safer than designing a reward, automating resets, and allowing a robot to explore for hours.</strong></p>
 
-<h3 id="quadratic-error-compounding-is-a-worst-case-guarantee-not-a-universal-law">Quadratic error compounding is a worst-case guarantee, not a universal law</h3>
+<h3 id="2-quadratic-error-compounding-is-a-worst-case-guarantee-not-a-universal-law">2) Quadratic error compounding is a worst-case guarantee, not a universal law</h3>
 
 <p>Compounding error occurs because BC is trained on states visited by the expert but deployed on states visited by its own policy. An early mistake can move the policy outside the demonstration distribution, making further mistakes more likely. Let $\pi_E$ and $\pi_{BC}$ denote the expert and imitation policies, respectively. For a $\gamma$-discounted MDP with rewards bounded by $R_{\max}$, the value gap can be bounded as [9]</p>
 
@@ -72,17 +72,17 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>Modern policy designs can further reduce the effective horizon. Action Chunking with Transformers (ACT), for example, predicts temporally coherent action sequences rather than one action at a time, improving precision and consistency on fine-grained bimanual tasks [11]. Action chunking does not eliminate distribution shift, but it reduces the number of independent predictions over which errors can accumulate.</p>
 
-<h2 id="is-rl-still-necessary">Is RL Still Necessary?</h2>
+<h2 id="12-is-rl-still-necessary">1.2 Is RL Still Necessary?</h2>
 
 <p>Yes—but not because BC is universally weak. RL becomes valuable when the data distribution itself is the bottleneck, when only a small subset of actions determines task success, or when the agent must discover behavior that the demonstrator did not provide.</p>
 
-<h3 id="1-rl-is-better-suited-to-broad-initial-state-distributions-and-stochastic-dynamics">1. RL is better suited to broad initial-state distributions and stochastic dynamics</h3>
+<h3 id="1-rl-is-better-suited-to-broad-initial-state-distributions-and-stochastic-dynamics">1) RL is better suited to broad initial-state distributions and stochastic dynamics</h3>
 
 <p>The core limitation of BC is state coverage: its training data contain only the states visited by a finite set of expert demonstrations. When the initial-state distribution is broad or the dynamics are stochastic, the set of states that may be encountered at deployment grows rapidly, while the demonstrated subset remains narrow. Reliable BC would therefore require demonstrations across many combinations of object poses, contacts, sensor noise, and execution outcomes, causing the required dataset to grow quickly with task variability.</p>
 
 <p>RL addresses this problem by reducing distribution shift. BC is trained under the expert distribution $d_{\pi_E}$ but deployed under $d_{\pi_{BC}}$; RL instead collects experience from the current policy, so its training distribution continually tracks the states that the policy actually visits. This difference is especially visible when the environment is highly variable. In the dexterous manipulation tasks studied by Rajeswaran et al., object, target, door, and nail positions were randomized; BC-only policies were usually unsuccessful, whereas RL fine-tuning learned all four tasks [15]. HIL-SERL reports a similar result on real robots with randomized initial states, dynamic objects, and external perturbations: its RL policies reached near-perfect success and substantially outperformed matched imitation-learning baselines [12].</p>
 
-<h3 id="2-rl-can-focus-learning-on-the-key-actions-that-determine-success">2. RL can focus learning on the key actions that determine success</h3>
+<h3 id="2-rl-can-focus-learning-on-the-key-actions-that-determine-success">2) RL can focus learning on the key actions that determine success</h3>
 
 <p>Standard BC minimizes prediction error over demonstrated actions. Unless the loss is explicitly reweighted, holding still for a fraction of a second and executing the millimeter-scale motion that completes an insertion both contribute training examples of the same basic kind. A large number of easy, low-consequence actions can dominate the objective even when success depends on a few contact-critical decisions.</p>
 
@@ -90,7 +90,7 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>This is why RL is especially attractive for insertion, assembly, and other contact-rich manipulation tasks: the last few millimeters may matter much more than the preceding free-space motion.</p>
 
-<h3 id="3-rl-can-learn-to-recover-from-failure">3. RL can learn to recover from failure</h3>
+<h3 id="3-rl-can-learn-to-recover-from-failure">3) RL can learn to recover from failure</h3>
 
 <p>BC is typically trained only on expert demonstrations. Trajectories containing mistakes are often discarded during data collection, so the dataset shows the policy how to perform the task correctly but not how to recover when something goes wrong. Once the learned policy makes a mistake and enters an unfamiliar state, it may therefore have no demonstrated behavior that can guide it back toward success.</p>
 
@@ -98,7 +98,7 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>This effect has been observed in many work. QT-Opt learned regrasping, object repositioning, and dynamic responses to perturbations without those behaviors being manually specified [13]. SERL similarly reports emergent recovery and correction behaviors under disturbances [7]. BC can certainly learn recovery if recovery demonstrations are deliberately collected, but RL offers a mechanism for discovering and improving such behaviors autonomously.</p>
 
-<h2 id="bc-and-rl-are-complements-not-opposites">BC and RL Are Complements, Not Opposites</h2>
+<h2 id="13-bc-and-rl-are-complements-not-opposites">1.3 BC and RL Are Complements, Not Opposites</h2>
 
 <p>The practical conclusion is not that one should discard BC and train every robot from scratch with RL. BC provides an excellent initialization: it places the policy near useful behavior, reduces unsafe exploration, and compresses human knowledge into a reusable prior. RL then has a different job—to improve beyond that prior, train on the policy’s own state distribution, emphasize outcome-critical decisions, and turn failures into recoverable experience.</p>
 
@@ -110,25 +110,25 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
   <li>use RL to improve robustness, precision, recovery, and task-level performance.</li>
 </ol>
 
-<h1 id="the-challenges-of-real-world-rl">The Challenges of Real-World RL</h1>
+<h1 id="ii-the-challenges-of-real-world-rl">II. The Challenges of Real-World RL</h1>
 
 <p>RL is therefore not optional for building robust and precise manipulation policies. Yet obtaining these benefits through online interaction on physical robots remains extremely challenging. Real-world RL faces three practical bottlenecks: collecting experience is costly to scale, exploration has physical consequences, and failed episodes often require manual resets.</p>
 
-<h2 id="real-world-experience-is-costly-to-scale">Real-world experience is costly to scale</h2>
+<h3 id="1-real-world-experience-is-costly-to-scale">1) Real-world experience is costly to scale</h3>
 
 <p>Unlike simulated environments, which can be instantiated in large numbers and sampled in parallel, physical experience is tied to a finite fleet of robots. Increasing rollout throughput therefore requires more robots, workspace, maintenance, and supervision rather than simply more compute. This quickly becomes prohibitively expensive as RL is scaled across tasks and environments.</p>
 
-<h2 id="exploration-has-physical-consequences">Exploration has physical consequences</h2>
+<h3 id="2-exploration-has-physical-consequences">2) Exploration has physical consequences</h3>
 
 <p>In simulation, a failed trial is cheap. On a real robot, exploratory actions can cause collisions, drop or damage objects, jam the mechanism, and accelerate hardware wear. Safety constraints and human intervention can limit these outcomes, but they also restrict exploration and add task-specific engineering and supervision.</p>
 
-<h2 id="resets-require-human-labor">Resets require human labor</h2>
+<h3 id="3-resets-require-human-labor">3) Resets require human labor</h3>
 
 <p>A simulator can restore its initial state instantly after every episode; the physical world cannot. After a failure, someone may need to replace an object, retrieve a dropped part, clear a jam, or recalibrate the setup before training can continue. Because many manipulation tasks are not naturally reversible, manual resets can turn nominally autonomous learning into labor-intensive data collection [16, 17].</p>
 
 <p><strong>If RL is necessary but physical interaction cannot scale fast enough, we need a way for the agent to obtain useful experience without executing every trial in the real world. This is where world models enter the picture.</strong></p>
 
-<h1 id="scaling-robot-rl-with-world-models">Scaling Robot RL with World Models</h1>
+<h1 id="iii-scaling-robotics-rl-with-world-models">III. Scaling Robotics RL with World Models</h1>
 
 <p>Suppose we had an action-conditioned world model that could serve as a sufficiently accurate simulator. The policy could then explore through imagined rollouts: experience could be generated in parallel, collisions and dropped objects would have no physical cost, and resetting would be a software operation. In principle, all three bottlenecks above would disappear from the inner RL loop.</p>
 
@@ -136,7 +136,7 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>The entire argument, however, rests on one difficult question: can we learn a world model that is accurate and general enough to optimize a robot policy against?</p>
 
-<h2 id="is-a-generalist-world-model-harder-than-a-generalist-policy">Is a Generalist World Model Harder Than a Generalist Policy?</h2>
+<h2 id="31-is-a-generalist-world-model-harder-than-a-generalist-policy">3.1 Is a Generalist World Model Harder Than a Generalist Policy?</h2>
 
 <p>A policy only needs to predict what action to take. A world model must predict what would happen under many possible actions, including high-dimensional visual changes, contacts, occlusions, deformable objects, and interactions across camera views. For generalist manipulation, learning the world model can therefore appear harder than learning the policy itself. This leads to an obvious objection: if we already have enough robot data to train a generalist world model, why not use the same data to learn a generalist policy directly through BC or model-free offline RL?</p>
 
@@ -144,7 +144,7 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>These difficulties have made many researchers skeptical that model-based RL can be made reliable in practice. As a result, despite its potential advantages, MBRL has remained far less mainstream than model-free RL. Reversing this perception requires a recipe that works without fragile, task-specific conservatism and hyperparameter tuning.</p>
 
-<h2 id="a-practical-recipe-adapt-a-foundation-model-and-keep-imagination-short">A Practical Recipe: Adapt a Foundation Model and Keep Imagination Short</h2>
+<h2 id="32-a-practical-recipe-adapt-a-foundation-model-and-keep-imagination-short">3.2 A Practical Recipe: Adapt a Foundation Model and Keep Imagination Short</h2>
 
 <p>Large image and video generative models offer a promising starting point. <strong>Internet-scale pretraining already teaches them useful ingredients of world modeling: objects tend to persist across frames, motion is temporally coherent, and everyday interactions follow regular physical patterns.</strong> Their native notion of an “action,” however, is usually a coarse text description or an unconstrained change in a video—not the fine-grained control command required by a robot. The remaining problem is therefore to adapt this coarse action interface to the robot’s action space. Because the model does not need to relearn visual structure and basic dynamics from scratch, this adaptation can require only a modest amount of robot data. A growing line of work has shown that pretrained image and video models can indeed be converted into controllable, action-conditioned world models for embodied tasks [21, 22, 23, 24].</p>
 
@@ -158,7 +158,7 @@ V_{\pi_E}-V_{\pi_{BC}} \leq \frac{2\sqrt{2}R_{\max}}{(1-\gamma)^2}\sqrt{\bar{\ep
 
 <p>With an accurate pretrained world model and short branched rollouts, offline model-based RL becomes surprisingly simple. <strong>VLA-MBPO does not require an explicit conservative penalty and uses the same core hyperparameters across diverse tasks, yet remains robust in both simulated and real-world manipulation [25].</strong> The robot data is no longer used only once to fit a policy: it adapts a reusable simulator, after which additional policy-dependent experience can be generated by scaling compute. The world model does not need to solve unrestricted, long-horizon world simulation—it only needs to be reliable on the short, decision-relevant branches used for learning.</p>
 
-<h2 id="pushing-this-recipe-to-the-limit">Pushing This Recipe to the Limit</h2>
+<h2 id="33-pushing-this-recipe-to-the-limit">3.3 Pushing This Recipe to the Limit</h2>
 
 <p>As image-editing and video foundation models continue to improve, this recipe could become much more powerful. For a particular robot embodiment, perhaps only a few hundred trajectories would be needed to adapt a general foundation model into an embodiment-specific simulator. The foundation model would already understand much of the visual world; the robot data would mainly need to teach it the embodiment’s action semantics—how its joints, gripper, and cameras interact with the environment.</p>
 
